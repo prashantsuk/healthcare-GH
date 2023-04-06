@@ -15,7 +15,7 @@ const mypath = path.join(__dirname, '../../../src/public')
   var from_date = req.query.from_date;
   var to_date = req.query.to_date;
   var img_name
-  var base_uri = 'http://localhost:8001/images/';
+  var base_uri = 'http://http://35.83.75.79:8001/images/';
       var multipleImages:any[]=Object.values(req.files)
       img_name=multipleImageUploader(multipleImages)
       try{

@@ -71,7 +71,7 @@ const MoreInfo: React.FC<IMoreInfo> = (props) => {
     let handleSubmit = async (e: any) => {
         e.preventDefault();
 
-        let res = await fetch(`http://localhost:8001/api/google/extrainfocheck/${id}`, {
+        let res = await fetch(`http://http://35.83.75.79:8001/api/google/extrainfocheck/${id}`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

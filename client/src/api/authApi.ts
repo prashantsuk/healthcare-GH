@@ -8,7 +8,7 @@ export interface data {
 export const loginApi = (data: data) =>
     axios({
         method: 'post',
-        url: 'http://localhost:8001/api/gmail/login1',
+        url: 'http://http://35.83.75.79:8001/api/gmail/login1',
         headers: {
             'Content-Type': 'application/json'
         },
@@ -18,7 +18,7 @@ export const loginApi = (data: data) =>
 export const registerApi = (data: any) =>
     axios({
         method: 'post',
-        url: 'http://localhost:8001/api/gmail/register',
+        url: 'http://http://35.83.75.79:8001/api/gmail/register',
         headers: {
             'Content-Type': 'application/json'
         },
@@ -28,7 +28,7 @@ export const registerApi = (data: any) =>
 export const ListedItemsApi = () =>
     axios({
         method: 'get',
-        url: 'http://localhost:8001/api/upload-products',
+        url: 'http://http://35.83.75.79:8001/api/upload-products',
         headers: {
             'Content-Type': 'application/json'
         }
@@ -37,7 +37,7 @@ export const ListedItemsApi = () =>
 export const SoldProductsApi = (seller_id: any) =>
     axios({
         method: 'get',
-        url: `http://localhost:8001/api/sold-products/${seller_id}`,
+        url: `http://http://35.83.75.79:8001/api/sold-products/${seller_id}`,
         headers: {
             'Content-Type': 'application/json'
         }
