@@ -21,7 +21,7 @@ const products_uploads = (req: any, res: any) => {
   var discription = req.body.discription;
   var from_date = req.body.from_date;
   var to_date = req.body.to_date;
-  var base_uri = 'http://localhost:8001/images/';
+  var base_uri = 'http://http://35.83.75.79:8001/images/';
   let price=req.body.price
   var img_name
   if (!req.files || Object.keys(req.files).length === 0) {
@@ -94,7 +94,7 @@ const saveProductDetailsService = (
         discription: discription,
         from_date: from_date,
         to_date: to_date,
-        base_uri: 'http://localhost:8001/images/',
+        base_uri: 'http://http://35.83.75.79:8001/images/',
         img_name: img_name,
         price:price
       })
