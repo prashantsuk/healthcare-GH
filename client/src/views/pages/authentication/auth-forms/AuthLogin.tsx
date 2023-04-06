@@ -62,15 +62,15 @@ const FirebaseLogin = ({ loginProp, ...others }: { loginProp?: number }) => {
         // } catch (err) {
         //     console.error(err);
         // }
-        window.open('35.83.75.79:8001/api/google', '_self');
+        window.open('http://35.83.75.79:8001/api/google', '_self');
     };
 
     const apple = () => {
-        window.open('http://http://35.83.75.79:8001/auth/github', '_self');
+        window.open('http://35.83.75.79:8001/auth/github', '_self');
     };
 
     const facebook = () => {
-        window.open('http://http://35.83.75.79:8001/api/facebook', '_self');
+        window.open('http://35.83.75.79:8001/api/facebook', '_self');
     };
 
     const [showPassword, setShowPassword] = React.useState(false);

@@ -69,7 +69,7 @@ const RatingsReviewa = () => {
             redirect: 'follow'
         };
 
-        fetch('http://http://35.83.75.79:8001/api/rating-products', requestOptions)
+        fetch('http://35.83.75.79:8001/api/rating-products', requestOptions)
             .then((response) => {
                 if (response.status === 200) {
                     setSeverity('success');

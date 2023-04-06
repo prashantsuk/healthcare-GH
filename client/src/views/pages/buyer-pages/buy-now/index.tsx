@@ -135,7 +135,7 @@ const BuyNow = () => {
     };
     useEffect(() => {
         const genRandomKey = () => {
-            fetch(`http://http://35.83.75.79:8001/api/rating-single-product/${location.state.values._id}`)
+            fetch(`http://35.83.75.79:8001/api/rating-single-product/${location.state.values._id}`)
                 .then(async (response) => setReviews(await response.json()))
 
                 .catch((error) => console.log('error', error));
@@ -193,7 +193,7 @@ const BuyNow = () => {
                                                 <div className="image-container">
                                                     <img
                                                         alt="slider pics"
-                                                        src={`http://http://35.83.75.79:8001/images/${fadeImage}`}
+                                                        src={`http://35.83.75.79:8001/images/${fadeImage}`}
                                                         width="95%"
                                                         height={350}
                                                     />
