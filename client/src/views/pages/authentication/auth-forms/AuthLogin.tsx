@@ -62,7 +62,7 @@ const FirebaseLogin = ({ loginProp, ...others }: { loginProp?: number }) => {
         // } catch (err) {
         //     console.error(err);
         // }
-        window.open('http://localhost:8001/api/google', '_self');
+        window.open('35.83.75.79:8001/api/google', '_self');
     };
 
     const apple = () => {
