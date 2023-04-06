@@ -38,7 +38,7 @@ async function subscribe(serviceWorkerReg: any) {
             userVisibleOnly: true,
             applicationServerKey: urlBase64ToUint8Array(key)
         });
-        axios.post('http://localhost:8001/api/notif', subscription);
+        axios.post('http://http://35.83.75.79:8001/api/notif', subscription);
     }
 }
 export { subscribe, regSw };

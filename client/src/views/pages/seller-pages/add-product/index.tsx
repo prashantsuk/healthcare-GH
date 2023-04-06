@@ -78,7 +78,7 @@ const AddProducts = () => {
         form.append('from_date', from_date);
         form.append('to_date', to_date);
         form.append('discription', getDiscription);
-        fetch(`http://localhost:8001/api/upload-products`, {
+        fetch(`http://http://35.83.75.79:8001/api/upload-products`, {
             method: 'POST',
             body: form
         }).then(() => {

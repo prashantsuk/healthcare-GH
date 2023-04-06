@@ -16,7 +16,7 @@ export const MyCheckoutForm: React.FC<IMyCheckoutForm> = () => {
 
     // create a payment intent
     useEffect(() => {
-        fetch('http://localhost:8001/api/create-payment-intent', {
+        fetch('http://http://35.83.75.79:8001/api/create-payment-intent', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

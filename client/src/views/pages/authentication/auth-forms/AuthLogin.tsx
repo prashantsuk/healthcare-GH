@@ -58,7 +58,7 @@ const FirebaseLogin = ({ loginProp, ...others }: { loginProp?: number }) => {
     const { firebaseEmailPasswordSignIn, firebaseGoogleSignIn } = useAuth();
     const google = async () => {
         // try {
-        //     await window.open('http://localhost:8001/api/google', '_self');
+        //     await window.open('http://http://35.83.75.79:8001/api/google', '_self');
         // } catch (err) {
         //     console.error(err);
         // }
@@ -66,11 +66,11 @@ const FirebaseLogin = ({ loginProp, ...others }: { loginProp?: number }) => {
     };
 
     const apple = () => {
-        window.open('http://localhost:8001/auth/github', '_self');
+        window.open('http://http://35.83.75.79:8001/auth/github', '_self');
     };
 
     const facebook = () => {
-        window.open('http://localhost:8001/api/facebook', '_self');
+        window.open('http://http://35.83.75.79:8001/api/facebook', '_self');
     };
 
     const [showPassword, setShowPassword] = React.useState(false);
