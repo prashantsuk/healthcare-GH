@@ -28,7 +28,7 @@
         // "no-shadow": "off",
         
         "no-extraneous-dependencies":0,
-        "import/no-extraneous-dependencies":false,
+        "import/no-extraneous-dependencies":0,
         "@typescript-eslint/no-shadow": "warn",
         "react/jsx-filename-extension": 0,
         "no-param-reassign": 0,
