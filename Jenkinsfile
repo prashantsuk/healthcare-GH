@@ -11,7 +11,7 @@ pipeline {
         
         stage ("Buiding Image") {
             steps {
-                sh ('docker build -t  "prashant680844/heathcare".') 
+                sh ('docker build -t  prashant680844/heathcare .') 
             }
         }
          stage ("scanning docker image") {
