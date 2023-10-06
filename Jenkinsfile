@@ -11,7 +11,7 @@ pipeline {
         
         stage ("Buiding Image") {
             steps {
-                sh ('sudo docker build -t .') 
+                sh ('docker build -t .') 
             }
         }
          stage ("scanning docker image") {
