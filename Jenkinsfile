@@ -1,13 +1,6 @@
 pipeline {
     agent any
  stages {
-        stage('Scan git Repo') {
-            steps {
-            sh ('trivy repo https://github.com/prashantsuk/healthcare-GH.git')
-          }
-        }
-        
-    stages {
         stage('Checkout') {
             steps {
             checkout([$class: 'GitSCM', branches: [[name: '*/live-code']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/prashantsuk/jenkins-terraform-ec2-pipeline.git']]])            
