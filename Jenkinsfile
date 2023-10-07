@@ -1,6 +1,12 @@
 pipeline {
     agent any
-
+ stages {
+        stage('Scan git Repo') {
+            steps {
+            sh ('trivy repo https://github.com/prashantsuk/healthcare-GH.git')
+          }
+        }
+        
     stages {
         stage('Checkout') {
             steps {
